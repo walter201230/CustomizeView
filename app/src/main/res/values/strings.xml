@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CustomizeView</string>
+    <string name="title_activity_bezier_curve">BezierCurveActivity</string>
 </resources>
