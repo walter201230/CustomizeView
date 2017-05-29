@@ -31,6 +31,8 @@ public class BezierCurveActivity extends AppCompatActivity implements
         mLoop = (Switch) findViewById(R.id.loop);
         mTangent = (Switch) findViewById(R.id.tangent);
         mTextView.setText(mBezierCurve.getOrderStr() + "阶贝塞尔曲线");
+        mLoop.setOnCheckedChangeListener(this);
+        mTangent.setOnCheckedChangeListener(this);
         mLoop.setChecked(false);
         mTangent.setChecked(true);
     }
