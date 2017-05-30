@@ -19,6 +19,18 @@ import java.util.Random;
 
 /**
  * 贝塞尔曲线展示界面
+ *
+ * <p> 提供的方法
+ * 开始贝塞尔曲线（required） @<code> void start() </code>
+ * 停止贝塞尔曲线（optional）@<code> void stop() </code>
+ * 增加控制点（optional））@<code> boolean addPoint() </code>
+ * 删除控制点（optional） @<code> boolean delPoint()</code>
+ * 获取贝塞尔曲线阶数（optional）@<code> int getOrder() </code>
+ * 设置移动速率（optional）@<code> void setRate(int rate) </code>
+ * 设置是否显示切线（optional）（optional）@<code> void setTangent(boolean tangent)</code>
+ * 设置是否循环（optional）（optional）@<code> void setLoop(boolean loop) </code>
+ * 设置贝塞尔曲线阶数（optional）@<code> void setOrder(int order) </code>
+ * <p/>
  */
 public class BezierCurve extends View {
 

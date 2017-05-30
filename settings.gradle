@@ -1,1 +1,1 @@
-include ':app', ':myview', ':beziercurve'
+include ':app', ':myview', ':beziercurve', ':qqmsgnotify'

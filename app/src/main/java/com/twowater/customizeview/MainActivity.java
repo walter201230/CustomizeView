@@ -3,14 +3,24 @@ package com.twowater.customizeview;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Button;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.twowater.customizeview.activity.BezierCurveActivity;
+import com.twowater.customizeview.activity.QQMsgNotifyActivity;
+import com.twowater.customizeview.adapter.MainRecycleAdapter;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import java.util.ArrayList;
 
-    private Button mBtnShowBezier;
+public class MainActivity extends AppCompatActivity {
+
+    private String[] arry = {"展示贝塞尔曲线", "QQ消息提示小红点"};
+    private ArrayList<String> list = new ArrayList<>();
+
+    private RecyclerView mRecyclerView;
+    private MainRecycleAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,18 +30,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initView() {
-        mBtnShowBezier = (Button) findViewById(R.id.show_beziercurve);
-        mBtnShowBezier.setOnClickListener(this);
-    }
-
-    @Override
-    public void onClick(View view) {
-        Intent intent;
-        switch (view.getId()) {
-            case R.id.show_beziercurve:
-                intent = new Intent(this, BezierCurveActivity.class);
-                startActivity(intent);
-                break;
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        for (int i = 0; i < arry.length; i++) {
+            list.add(i, arry[i]);
         }
+        mAdapter = new MainRecycleAdapter(list);
+        mAdapter.openLoadAnimation(BaseQuickAdapter.SLIDEIN_BOTTOM);
+        mRecyclerView.setAdapter(mAdapter);
+        mAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {
+            @Override
+            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+                Intent intent;
+                switch (list.get(position)) {
+                    case "展示贝塞尔曲线":
+                        intent = new Intent(MainActivity.this, BezierCurveActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "QQ消息提示小红点":
+                        intent = new Intent(MainActivity.this, QQMsgNotifyActivity.class);
+                        startActivity(intent);
+                        break;
+                }
+            }
+        });
     }
 }

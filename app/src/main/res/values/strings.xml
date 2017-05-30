@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">CustomizeView</string>
     <string name="title_activity_bezier_curve">BezierCurveActivity</string>
+
+
+    <!--仿 QQ 红点消息提醒-->
+    <string name="bottom_my">我的</string>
+    <string name="bottom_Message">消息</string>
+    <string name="bottom_video">视频</string>
+    <string name="bottom_round">附近</string>
+
+
 </resources>

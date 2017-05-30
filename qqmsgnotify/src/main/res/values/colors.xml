@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义控件，红色点消息提醒的-->
+    <color name="color_message">#fd5b41</color>
+</resources>

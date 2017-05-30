@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/tab_round"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10px"
+            android:layout_weight="2"
+            android:gravity="bottom">
+
+            <RelativeLayout
+                android:id="@+id/rl_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:id="@+id/img_round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_fj"
+                    android:clickable="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/point_round"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_marginTop="-20px"
+                android:layout_toRightOf="@id/rl_round"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:textSize="28px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_round"
+                android:textColor="@color/color_text_main_bottom"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_group"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10px"
+            android:layout_weight="2"
+            android:gravity="bottom">
+
+            <RelativeLayout
+                android:id="@+id/rl_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:id="@+id/img_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_sp"
+                    android:clickable="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/point_group"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_marginTop="-20px"
+                android:layout_toRightOf="@id/rl_group"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:textSize="28px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_video"
+                android:textColor="@color/color_text_main_bottom"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_conversation"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10px"
+            android:layout_weight="2"
+            android:gravity="bottom">
+
+            <RelativeLayout
+                android:id="@+id/rl_conversation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:id="@+id/img_conversation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/icon_news"
+                    android:clickable="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/point_conversation"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_marginTop="-20px"
+                android:layout_toRightOf="@id/rl_conversation"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_conversation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_Message"
+                android:textColor="@color/color_text_main_bottom"
+                android:textSize="28px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tab_my"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10px"
+            android:layout_weight="2"
+            android:gravity="bottom">
+
+            <RelativeLayout
+                android:id="@+id/rl_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:id="@+id/img_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_my"
+                    android:clickable="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/point_my"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_marginTop="-20px"
+                android:layout_toRightOf="@id/rl_my"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:textSize="28px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_my"
+                android:textColor="@color/color_text_main_bottom"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

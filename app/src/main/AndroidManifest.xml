@@ -19,6 +19,7 @@
             android:name=".activity.BezierCurveActivity"
             android:label="@string/title_activity_bezier_curve"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.twowater.customizeview.activity.QQMsgNotifyActivity"></activity>
     </application>
 
 </manifest>
