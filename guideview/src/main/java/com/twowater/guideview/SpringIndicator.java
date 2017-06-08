@@ -137,9 +137,6 @@ public class SpringIndicator extends FrameLayout {
         }
     }
 
-    /**
-     * Set current point position.
-     */
     private void createPoints() {
         View view = tabs.get(viewPager.getCurrentItem());
         springView.getHeadPoint().setX(view.getX() + view.getWidth() / 2);
@@ -215,8 +212,6 @@ public class SpringIndicator extends FrameLayout {
                     springView.getFootPoint().setRadius(radiusMax);
                 }
 
-                // set indicator colors
-                // https://github.com/TaurusXi/GuideBackgroundColorAnimation
                 if (indicatorColorsId != 0) {
                     float length = (position + positionOffset) / viewPager.getAdapter().getCount();
                     int progress = (int) (length * INDICATOR_ANIM_DURATION);

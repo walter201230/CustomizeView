@@ -11,10 +11,10 @@
     <color name="color_text_selected_main_bottom">#2fb9c3</color>
 
     <!-- ViewPage 引导页 GuideViewActivity-->
-    <color name="indicator_1">#55B3C2</color>
-    <color name="indicator_2">#64A4A4</color>
-    <color name="indicator_3">#66D7B9</color>
-    <color name="indicator_4">#FDBC7D</color>
+    <color name="indicator_1">#f4bc42</color>
+    <color name="indicator_2">#62f441</color>
+    <color name="indicator_3">#41e2f4</color>
+    <color name="indicator_4">#ac41f4</color>
 
 
 
