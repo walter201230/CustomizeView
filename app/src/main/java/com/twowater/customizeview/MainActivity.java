@@ -8,15 +8,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.twowater.customizeview.activity.BezierCurveActivity;
-import com.twowater.customizeview.activity.QQMsgNotifyActivity;
-import com.twowater.customizeview.adapter.MainRecycleAdapter;
+import com.twowater.customizeview.BeziercurvesExample.BezierCurveActivity;
+import com.twowater.customizeview.GuideviewExample.GuideViewActivity;
+import com.twowater.customizeview.QqmsgnotifyExample.QQMsgNotifyActivity;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String[] arry = {"展示贝塞尔曲线", "QQ消息提示小红点"};
+    private String[] arry = {"展示贝塞尔曲线", "QQ消息提示小红点", "ViewPage滑动引导动画"};
     private ArrayList<String> list = new ArrayList<>();
 
     private RecyclerView mRecyclerView;
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        for (int i = 0; i < arry.length; i++) {
-            list.add(i, arry[i]);
+        for (String str : arry) {
+            list.add(str);
         }
         mAdapter = new MainRecycleAdapter(list);
         mAdapter.openLoadAnimation(BaseQuickAdapter.SLIDEIN_BOTTOM);
@@ -51,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(MainActivity.this, QQMsgNotifyActivity.class);
                         startActivity(intent);
                         break;
+                    case "ViewPage滑动引导动画":
+                        intent = new Intent(MainActivity.this, GuideViewActivity.class);
+                        startActivity(intent);
+                        break;
+
                 }
             }
         });

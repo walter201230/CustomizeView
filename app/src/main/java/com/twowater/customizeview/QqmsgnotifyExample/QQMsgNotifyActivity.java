@@ -1,4 +1,4 @@
-package com.twowater.customizeview.activity;
+package com.twowater.customizeview.QqmsgnotifyExample;
 
 import android.graphics.PointF;
 import android.os.Bundle;

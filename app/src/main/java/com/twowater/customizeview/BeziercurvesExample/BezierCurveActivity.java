@@ -1,4 +1,4 @@
-package com.twowater.customizeview.activity;
+package com.twowater.customizeview.BeziercurvesExample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

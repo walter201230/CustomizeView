@@ -1,8 +1,7 @@
-package com.twowater.customizeview.adapter;
+package com.twowater.customizeview;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.twowater.customizeview.R;
 
 import java.util.List;
 

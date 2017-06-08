@@ -16,10 +16,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.BezierCurveActivity"
+            android:name="com.twowater.customizeview.BeziercurvesExample.BezierCurveActivity"
             android:label="@string/title_activity_bezier_curve"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="com.twowater.customizeview.activity.QQMsgNotifyActivity"></activity>
+        <activity android:name="com.twowater.customizeview.QqmsgnotifyExample.QQMsgNotifyActivity"></activity>
+        <activity android:name="com.twowater.customizeview.GuideviewExample.GuideViewActivity"></activity>
     </application>
 
 </manifest>
